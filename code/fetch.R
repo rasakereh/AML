@@ -17,12 +17,16 @@ gsms <- paste0("00000000000000000000000000000000000000001000100000",
 groups <- strsplit(gsub("1", "Healthy-", gsub("0", "AML-", gsms)), '-')[[1]]
 
 expressionData <- exprs(gset) %>% na.omit()
-resPCA <- prcomp(expressionData)
-
+centeredExpression <- expressionData %>% t() %>% scale(scale=F) %>% t()
+resPCA <- prcomp(centeredExpression)
 # (D)ata * (R)otation = (X)
-# D: 4577*170, rows: d_i, cols: g_i
+# D: 4577*170, rows: g_i, cols: d_i
 # R: 170*170, rows: g_i, rows: pc_i
-# X: 4577*170, rows: d_i, rows: pc_i
+# X: 4577*170, rows: pc_i, rows: d_i
 
-plot(resPCA$x[,1], resPCA$x[,2])
+groupedPCA <- data.frame(resPCA$rotation, Category=groups)
 
+ggplot(groupedPCA, aes(PC1, PC2, color=Category)) + geom_point(size=2.8) + theme_bw()
+pdf("results/heatmap", height=30, width=30)
+pheatmap(cov(resPCA$rotation %>% t()))
+dev.off()
