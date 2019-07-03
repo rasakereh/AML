@@ -48,6 +48,9 @@ ggplot(SNE.B.compare, aes(X1, X2, color=Category)) + geom_point(size=2.8) +
 ggplot(groupedTSNE, aes(X1, X2, color=Category)) + geom_point(size=2.8) +
   labs(title="Mixture of Cells(t-SNE)") + theme_bw()
 dev.off()
+pdf("results/boxplot.pdf", height=20, width=40)
+boxplot(expressionData, names=subpopulation)
+dev.off()
 pdf("results/heatmap.pdf", height=30, width=30)
 pheatmap(cor(expressionData), labels_row=category, labels_col=category)
 dev.off()
