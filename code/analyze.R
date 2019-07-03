@@ -52,18 +52,18 @@ tT.total <- tTGenerator(categories, expressionData)
 tT.B <- tTGenerator(B.cats, B.expr)
 tT.T <- tTGenerator(T.cats, T.expr)
 
-total.ups <- (tT.total %>% filter(adj.P.Val < 1e-4 & logFC > 1))[['Gene.symbol']] %>%
-  strsplit("//") %>% unlist() %>% unique()
-total.downs <- (tT.total %>% filter(adj.P.Val < 1e-4 & logFC < 1))[['Gene.symbol']] %>%
-  strsplit("//") %>% unlist() %>% unique()
-B.ups <- (tT.B %>% filter(adj.P.Val < 1e-4 & logFC > 1))[['Gene.symbol']] %>%
-  strsplit("//") %>% unlist() %>% unique()
-B.downs <- (tT.B %>% filter(adj.P.Val < 1e-4 & logFC < 1))[['Gene.symbol']] %>%
-  strsplit("//") %>% unlist() %>% unique()
-T.ups <- (tT.T %>% filter(adj.P.Val < 1e-4 & logFC > 1))[['Gene.symbol']] %>%
-  strsplit("//") %>% unlist() %>% unique()
-T.downs <- (tT.T %>% filter(adj.P.Val < 1e-4 & logFC < 1))[['Gene.symbol']] %>%
-  strsplit("//") %>% unlist() %>% unique()
+total.ups <- (tT.total %>% filter(adj.P.Val < 1e-2 & logFC > 1))[['Gene.symbol']] %>%
+  strsplit("///") %>% unlist() %>% unique()
+total.downs <- (tT.total %>% filter(adj.P.Val < 1e-2 & logFC < 1))[['Gene.symbol']] %>%
+  strsplit("///") %>% unlist() %>% unique()
+B.ups <- (tT.B %>% filter(adj.P.Val < 1e-2 & logFC > 1))[['Gene.symbol']] %>%
+  strsplit("///") %>% unlist() %>% unique()
+B.downs <- (tT.B %>% filter(adj.P.Val < 1e-2 & logFC < 1))[['Gene.symbol']] %>%
+  strsplit("///") %>% unlist() %>% unique()
+T.ups <- (tT.T %>% filter(adj.P.Val < 1e-2 & logFC > 1))[['Gene.symbol']] %>%
+  strsplit("///") %>% unlist() %>% unique()
+T.downs <- (tT.T %>% filter(adj.P.Val < 1e-2 & logFC < 1))[['Gene.symbol']] %>%
+  strsplit("///") %>% unlist() %>% unique()
 
 write(total.ups, file="results/TotalUps.txt")
 write(total.downs, file="results/TotalDowns.txt")
