@@ -36,7 +36,7 @@ tTGenerator <- function(fl, exprData)
   cont.matrix <- makeContrasts(Normal-Leukemia, levels=design)
   fit2 <- contrasts.fit(fit, cont.matrix)
   fit2 <- eBayes(fit2, 0.01)
-  tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
+  tT <- topTable(fit2, adjust="fdr", sort.by="B", number=500)
   if(!sum(grepl("Gene.symbol", colnames(tT))))
   {
     tT <- tT %>% mutate(probe_id=rownames(tT)) %>% left_join(GENE.SYMBOLS, by="probe_id") %>%
