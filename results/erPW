@@ -1,0 +1,117 @@
+In the form (name, adj.P.Val, z-score, combined)
+
+TotalUps:
+    KEGG2019 Human:
+        Glycosaminoglycan degradation, 0.02246, -613.78, 3210.85
+        Glycosphingolipid biosynthesis, 0.4322, -900.86, 1321.91
+        RIG-I-like receptor signaling pathway, 0.004278, -97.67, 704.97
+        Autoimmune thyroid disease, 0.002948, -78.88, 653.40
+        Graft-versus-host disease, 0.001461, -68.48, 636.28
+    NCI-Nature 2016:
+        NIL
+    Reactome 2016:
+        Endosomal/Vacuolar pathway_Homo sapiens_R-HSA-1236977, 0.000001320, -1.98, 37.94
+        Interferon alpha/beta signaling_Homo sapiens_R-HSA-909733, 1.331e-7, 0.00001904, -1.86, 29.37
+        Antigen Presentation: Folding, assembly and peptide loading of class I MHC_Homo sapiens_R-HSA-983170, 0.00002778, -1.93, 28.99
+        Immune System_Homo sapiens_R-HSA-168256, 0.0001276, -2.20, 28.61
+        Interferon gamma signaling_Homo sapiens_R-HSA-877300, 0.00008257, -1.76, 24.06
+
+TotalDowns:
+    KEGG2019 Human:
+        DNA replication	6.096e-17, -49.69, 1855.26
+        Homologous recombination, 5.327e-9, -49.65, 1100.04
+        Oocyte meiosis, 1.312e-10, -26.82, 704.47
+        Fanconi anemia pathway, 0.000001224, -41.92, 687.64
+        Small cell lung cancer, 0.0006399, -63.94, 602.21
+    NCI-Nature 2016:
+        E2F transcription factor network_Homo sapiens_bb4d0fd3-6191-11e5-8ac5-06603eb7f303, 1.616e-20, -1.73, 85.49
+        PLK1 signaling events_Homo sapiens_e5e87977-6194-11e5-8ac5-06603eb7f303, 1.127e-20, -1.66, 83.87
+        FOXM1 transcription factor network_Homo sapiens_c51cda49-6192-11e5-8ac5-06603eb7f303, 2.769e-16, -1.51, 58.67
+        Aurora B signaling_Homo sapiens_304a75af-618c-11e5-8ac5-06603eb7f303, 5.779e-18, -1.26, 54.28
+        ATR signaling pathway_Homo sapiens_8991cbac-618b-11e5-8ac5-06603eb7f303, 4.751e-15, -1.18, 42.36
+    Reactome 2016:
+        Cell Cycle_Homo sapiens_R-HSA-1640170, 1.426e-117, -2.46, 677.98
+        Cell Cycle, Mitotic_Homo sapiens_R-HSA-69278, 1.227e-106, -2.47, 616.03
+        M Phase_Homo sapiens_R-HSA-68886, 2.552e-50, -2.43, 290.68
+        Cell Cycle Checkpoints_Homo sapiens_R-HSA-69620, 6.168e-44, -2.34, 244.94
+        G2/M Checkpoints_Homo sapiens_R-HSA-69481, 2.432e-40, -2.32, 222.45
+
+TUPs:
+    KEGG2019 Human:
+        Glycosaminoglycan degradation, 0.1424, -585.89, 2091.24
+        Autoimmune thyroid disease, 0.00003361, -80.82, 1151.46
+        Th17 cell differentiation, 0.00002734, -69.21, 1041.32
+        Graft-versus-host disease, 0.00004041, -68.48, 923.26
+        Allograft rejection, 0.00003361, -54.70, 767.09
+    NCI-Nature 2016:
+        TNF receptor signaling pathway_Homo sapiens_316be05e-6196-11e5-8ac5-06603eb7f303, 0.0001737, -1.53, 19.39
+        TRAIL signaling pathway_Homo sapiens_3a79fddf-6196-11e5-8ac5-06603eb7f303, 0.0001737, -1.41, 18.49
+        IL12-mediated signaling events_Homo sapiens_7acdea19-6193-11e5-8ac5-06603eb7f303, 0.0008804, -1.54, 16.39
+        Downstream signaling in naive CD8+ T cells_Homo sapiens_92180cef-6191-11e5-8ac5-06603eb7f303, 0.0009973, -1.43, 14.59
+        IL2-mediated signaling events_Homo sapiens_a2a1883c-6193-11e5-8ac5-06603eb7f303, 0.002484, -1.55, 14.07
+    Reactome 2016:
+        Immune System_Homo sapiens_R-HSA-168256, 0.00001975, -2.23, 37.84
+        Cytokine Signaling in Immune system_Homo sapiens_R-HSA-1280215, 0.00003972, -2.40, 37.28
+        Endosomal/Vacuolar pathway_Homo sapiens_R-HSA-1236977, 0.00004649, -1.90, 28.15
+        Interferon alpha/beta signaling_Homo sapiens_R-HSA-909733, 0.00004649, -1.84, 27.00
+        Interferon gamma signaling_Homo sapiens_R-HSA-877300, 0.00006090, -1.75, 24.90
+
+TDowns:
+    KEGG2019 Human:
+        Glyoxylate and dicarboxylate metabolism, 0.5917, -701.48, 867.99
+        Glycosaminoglycan biosynthesis, 0.3410, -406.31, 856.52
+        Homologous recombination, 0.00001242, -50.16, 744.50
+        Small cell lung cancer, 0.001191, -67.62, 628.70
+        DNA replication, 0.00006099, -49.02, 624.51
+    NCI-Nature 2016:
+        PLK1 signaling events_Homo sapiens_e5e87977-6194-11e5-8ac5-06603eb7f303, 1.853e-13, -1.66, 55.78
+        FOXM1 transcription factor network_Homo sapiens_c51cda49-6192-11e5-8ac5-06603eb7f303, 1.887e-11, -1.65, 46.63
+        E2F transcription factor network_Homo sapiens_bb4d0fd3-6191-11e5-8ac5-06603eb7f303, 3.319e-11, -1.68, 45.91
+        p73 transcription factor network_Homo sapiens_a88c505e-6194-11e5-8ac5-06603eb7f303, 8.821e-10, -1.38, 32.22
+        ATR signaling pathway_Homo sapiens_8991cbac-618b-11e5-8ac5-06603eb7f303, 1.914e-10, -1.24, 31.11
+    Reactome 2016:
+        Cell Cycle_Homo sapiens_R-HSA-1640170, 3.743e-54, -2.46, 317.68
+        Cell Cycle, Mitotic_Homo sapiens_R-HSA-69278, 5.027e-44, -2.47, 259.31
+        Mitotic Prometaphase_Homo sapiens_R-HSA-68877, 1.905e-22, -2.03, 111.73
+        M Phase_Homo sapiens_R-HSA-68886, 2.687e-18, -2.41, 107.58
+        Resolution of Sister Chromatid Cohesion_Homo sapiens_R-HSA-2500257, 1.644e-20, -2.06, 103.70
+
+BUps:
+    KEGG2019 Human:
+        Intestinal immune network for IgA production, 0.000003880, -99.15, 1739.13
+        Glycosphingolipid biosynthesis, 0.8842, -781.54, 574.04
+        TNF signaling pathway, 0.06974, -74.45, 391.55
+        Autoimmune thyroid disease, 0.08780, -77.59, 383.98
+        Asthma, 0.09760, -81.53, 76.60
+    NCI-Nature 2016:
+        NIL
+    Reactome 2016:
+        Immune System_Homo sapiens_R-HSA-168256, 0.0003718, -2.23, 31.24
+        Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell_Homo sapiens_R-HSA-198933, 0.0006682, -2.00, 25.45
+        Adaptive Immune System_Homo sapiens_R-HSA-1280218, 0.006699, 2.27, 22.67
+        CD22 mediated BCR regulation_Homo sapiens_R-HSA-5690714, 0.009758, -1.94, 17.65
+        TNF receptor superfamily (TNFSF) members mediating non-canonical NF-kB pathway_Homo sapiens_R-HSA-5676594, 0.009595, -1.88, 17.61
+
+BDowns:
+    KEGG2019 Human:
+        Small cell lung cancer, 0.002421, -64.35, 525.51
+        DNA replication, 0.0004052, -48.35, 515.36
+        Homologous recombination, 0.0005634, -48.79, 488.48
+        Fanconi anemia pathway, 0.001818, -40.98, 355.37
+        Human T-cell leukemia virus 1 infection, 0.00003497, -18.10, 242.43
+    NCI-Nature 2016:
+        E2F transcription factor network_Homo sapiens_bb4d0fd3-6191-11e5-8ac5-06603eb7f303, 6.635e-13, -1.78, 57.97
+        FOXM1 transcription factor network_Homo sapiens_c51cda49-6192-11e5-8ac5-06603eb7f303, 6.102e-9, -1.65, 37.63
+        PLK1 signaling events_Homo sapiens_e5e87977-6194-11e5-8ac5-06603eb7f303, 2.976e-7, -1.47, 26.78
+        Aurora B signaling_Homo sapiens_304a75af-618c-11e5-8ac5-06603eb7f303, 9.910e-8, -1.26, 24.67
+        Regulation of retinoblastoma protein_Homo sapiens_407a3468-6195-11e5-8ac5-06603eb7f303, 0.000003482, -1.52, 23.55
+    Reactome 2016:
+        Cell Cycle_Homo sapiens_R-HSA-1640170, 1.430e-40, -2.46, 241.02
+        Cell Cycle, Mitotic_Homo sapiens_R-HSA-69278, 7.756e-36, -2.47, 213.08
+        Mitotic G1-G1/S phases_Homo sapiens_R-HSA-453279, 1.077e-18, -2.11, 98.22
+        G1/S Transition_Homo sapiens_R-HSA-69206, 2.942e-15, -2.11, 80.21
+        Mitotic Prometaphase_Homo sapiens_R-HSA-68877, 1.569e-15, -2.02, 78.71
+
+Consensus:
+    recalculate ...
+

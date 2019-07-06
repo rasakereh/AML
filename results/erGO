@@ -1,0 +1,110 @@
+In the form (name, adj.P.Val, z-score, combined)
+
+TotalUps:
+    GO Biological Process 2018:
+        antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480), 0.0001851, -2.33, 35.76
+        type I interferon signaling pathway (GO:0060337), 0.0002905, -2.32, 30.11
+        retrograde transport, vesicle recycling within Golgi (GO:0000301), 0.02414, -4.03, 29.32
+        regulation of necrotic cell death (GO:0010939), 0.003712, -2.48, 23.91
+        regulation of necroptotic process (GO:0060544), 0.0002905, -1.62, 20.96
+    GO Molecular Function 2018:
+        NIL
+    GO Cellular Component 2018:
+        death-inducing signaling complex (GO:0031264), 0.01076, -3.30, 22.26
+        recycling endosome membrane (GO:0055038), 0.00003093, -1.46, 21.80
+        integral component of lumenal side of endoplasmic reticulum membrane (GO:0071556), 0.001205, -1.95, 20.60
+        COPII-coated ER to Golgi transport vesicle (GO:0030134), 0.001228, -2.06, 19.47
+        MHC protein complex (GO:0042611), 0.001980, -2.05, 17.74
+
+TotalDowns:
+    GO Biological Process 2018:
+        DNA metabolic process (GO:0006259), 1.366e-44, -1.36, 147.85
+        DNA replication (GO:0006260), 1.493e-35, -1.56, 135.24
+        DNA repair (GO:0006281), 3.977e-26, -1.71, 109.74
+        mitotic cell cycle phase transition (GO:0044772), 2.146e-32, -1.17, 92.67
+        chromatin remodeling at centromere (GO:0031055), 1.246e-15, -2.28, 88.85
+    GO Molecular Function 2018:
+        DNA helicase activity (GO:0003678), 7.421e-10, -2.66, 66.98
+        ATPase activity (GO:0016887), 4.563e-9, -2.31, 53.57
+        DNA-dependent ATPase activity (GO:0008094), 3.454e-13, -1.53, 51.82
+        DNA binding (GO:0003677), 1.223e-16, -1.20, 50.97
+        3'-5' DNA helicase activity (GO:0043138), 0.000003135, -2.82, 44.63
+    GO Cellular Component 2018:
+        nuclear chromosome part (GO:0044454), 4.133e-37, -1.25, 111.11
+        chromosome, centromeric region (GO:0000775), 5.429e-20, -2.25, 108.81
+        microtubule organizing center (GO:0005815), 1.986e-18, -2.02, 88.76
+        spindle (GO:0005819), 1.837e-29, -1.18, 83.06
+        chromatin (GO:0000785), 1.158e-19, -1.66, 78.42
+
+TUPs:
+    GO Biological Process 2018:
+        retrograde transport, vesicle recycling within Golgi (GO:0000301), 0.009160, -4.03, 37.61
+        cytokine-mediated signaling pathway (GO:0019221), 6.018e-9, -1.35, 35.45
+        type I interferon signaling pathway (GO:0060337), 0.001496, -2.32, 29.10
+        regulation of lymphocyte activation (GO:0051249), 0.005443, -2.70, 27.84
+        antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480), 0.001988, -2.33, 27.55
+    GO Molecular Function 2018:
+        cytokine receptor activity (GO:0004896), 0.0002861, -1.84, 25.68
+        tumor necrosis factor-activated receptor activity (GO:0005031), 0.04099, -2.56, 20.28
+    GO Cellular Component 2018:
+        clathrin vesicle coat (GO:0030125), 0.03999, -3.52, 19.54
+        integral component of lumenal side of endoplasmic reticulum membrane (GO:0071556), 0.002593, -1.94, 19.08
+        MHC protein complex (GO:0042611), 0.003483, -2.08, 18.73
+        T cell receptor complex (GO:0042101), 0.02267, -2.55, 16.46
+        clathrin coat of trans-Golgi network vesicle (GO:0030130), 0.05913, -3.12, 15.73
+
+TDowns:
+    GO Biological Process 2018:
+        strand displacement (GO:0000732), 1.727e-11, -2.58, 75.45
+        kinetochore organization (GO:0051383), 2.163e-11, -2.56, 73.81
+        mitotic nuclear division (GO:0140014), 1.157e-11, -2.22, 65.92
+        DNA biosynthetic process (GO:0071897), 1.520e-12, -1.97, 62.81
+        DNA replication (GO:0006260), 2.687e-15, -1.55, 61.43
+    GO Molecular Function 2018:
+        DNA helicase activity (GO:0003678), 0.000009750, -2.62, 38.96
+        microtubule motor activity (GO:0003777), 1.938e-7, -1.85, 37.43
+        ATPase activity (GO:0016887), 0.000003774, -2.31, 37.41
+        motor activity (GO:0003774), 2.992e-7, -1.58, 30.62
+        DNA-dependent ATPase activity (GO:0008094), 4.744e-7, -1.52, 28.12
+    GO Cellular Component 2018:
+        chromosome, centromeric region (GO:0000775), 4.185e-16, -2.26, 89.52
+        condensed chromosome, centromeric region (GO:0000779), 5.224e-12, -2.09, 61.06
+        spindle microtubule (GO:0005876), 5.953e-12, -1.95, 56.22
+        condensed chromosome kinetochore (GO:0000777), 3.066e-10, -2.22, 54.12
+        spindle (GO:0005819), 1.758e-16, -1.18, 48.64
+
+BUps:
+    GO Biological Process 2018:
+        renal filtration (GO:0097205), 0.002162, -3.50, 38.03
+        phagocytosis, engulfment (GO:0006911), 0.0001266, -2.39, 35.59
+        regulation of immune effector process (GO:0002697), 0.001193, -2.89, 34.48
+        glomerular filtration (GO:0003094), 0.001895, -3.00, 33.73
+        positive regulation of lymphocyte activation (GO:0051251, 0.0001266, -2.21, 32.93
+    GO Molecular Function 2018:
+        immunoglobulin receptor binding (GO:0034987), 0.00008611, -2.41, 36.35
+    GO Cellular Component 2018:
+        NIL
+
+BDowns:
+    GO Biological Process 2018:
+        DNA metabolic process (GO:0006259), 1.976e-20, -1.36, 71.65
+        microtubule cytoskeleton organization involved in mitosis (GO:1902850), 4.370e-12, -1.65, 53.05
+        sister chromatid segregation (GO:0000819), 3.095e-9, -2.04, 50.33
+        mitotic spindle organization (GO:0007052), 3.027e-13, -1.39, 49.10
+        DNA replication (GO:0006260), 1.211e-11, -1.55, 47.77
+    GO Molecular Function 2018:
+        histone kinase activity (GO:0035173), 0.0001513, -3.09, 41.13
+        DNA helicase activity (GO:0003678), 0.0001706, -2.67, 34.36
+        DNA polymerase binding (GO:0070182), 0.0004986, -2.31, 25.27
+        3'-5' DNA helicase activity (GO:0043138), 0.004400, -2.80, 22.77
+        DNA-dependent ATPase activity (GO:0008094), 0.00006878, -1.53, 22.22
+    GO Cellular Component 2018:
+        microtubule organizing center (GO:0005815), 1.411e-10, -2.07, 54.44
+        chromosome, centromeric region (GO:0000775), 2.555e-8, -2.21, 45.55
+        nuclear chromosome part (GO:0044454), 1.751e-13, -1.25, 42.91
+        centrosome (GO:0005813), 1.411e-10, -1.61, 42.58
+        condensed chromosome kinetochore (GO:0000777), 5.286e-7, -2.27, 39.74
+
+Consensus:
+    recalculate ...
+

@@ -1,0 +1,53 @@
+In the form (name, adj.P.Val, z-score, combined)
+
+TotalUps:
+    ARCHS4 IDG Coexp:
+        STK17A_IDG_kinase_ARCHS4_coexpression, 5.174e-28, -1.62, 110.43
+        P2RY10_IDG_GPCR_ARCHS4_coexpression, 1.710e-25, -1.55, 95.41
+        MAP3K14_IDG_kinase_ARCHS4_coexpression, 9.806e-18, -1.54, 66.84
+        GPR25_IDG_GPCR_ARCHS4_coexpression, 1.197e-15, -1.77, 66.61
+        GPR174_IDG_GPCR_ARCHS4_coexpression, 8.520e-17, -1.58, 63.96
+
+TotalDowns:
+    ARCHS4 IDG Coexp:
+        UCK2_IDG_kinase_ARCHS4_coexpression, 9.315e-75, -1.61, 283.39
+        PKMYT1_IDG_kinase_ARCHS4_coexpression, 2.303e-65, -1.53, 235.44
+        CHRNA9_IDG_ionchannel_ARCHS4_coexpression, 2.957e-46, -1.54, 168.06
+        RIOK1_IDG_kinase_ARCHS4_coexpression, 7.258e-36, -1.60, 136.09
+        PKN3_IDG_kinase_ARCHS4_coexpression, 7.575e-35, -1.55, 127.31
+
+TUPs:
+    ARCHS4 IDG Coexp:
+        STK17A_IDG_kinase_ARCHS4_coexpression, 6.729e-22, -1.62, 88.38
+        GPR174_IDG_GPCR_ARCHS4_coexpression, 2.546e-21, -1.62, 84.65
+        P2RY10_IDG_GPCR_ARCHS4_coexpression, 2.546e-21, -1.54, 80.07
+        DYRK2_IDG_kinase_ARCHS4_coexpression, 8.547e-12, -1.60, 47.72
+        GPR171_IDG_GPCR_ARCHS4_coexpression, 3.522e-10, -1.72, 44.50
+
+TDowns:
+    ARCHS4 IDG Coexp:
+        UCK2_IDG_kinase_ARCHS4_coexpression, 1.384e-31, -1.60, 121.31
+        PKMYT1_IDG_kinase_ARCHS4_coexpression, 1.384e-31, -1.54, 117.12
+        CHRNA9_IDG_ionchannel_ARCHS4_coexpression, 1.934e-23, -1.54, 87.25
+        PKN3_IDG_kinase_ARCHS4_coexpression, 3.962e-15, -1.55, 57.22
+        CSNK2A2_IDG_kinase_ARCHS4_coexpression, 3.962e-15, -1.47, 54.49
+
+BUps:
+    ARCHS4 IDG Coexp:
+        P2RY10_IDG_GPCR_ARCHS4_coexpression, 2.375e-20, -1.56, 79.30
+        MAP3K14_IDG_kinase_ARCHS4_coexpression, 3.895e-7, -1.55, 30.67
+        STK38L_IDG_kinase_ARCHS4_coexpression, 0.000007491, -1.61, 26.45
+        GPR174_IDG_GPCR_ARCHS4_coexpression, 0.00002773, -1.60, 23.70
+        GPR152_IDG_GPCR_ARCHS4_coexpression, 0.003520, -1.98, 17.89
+
+BDowns:
+    ARCHS4 IDG Coexp:
+        PKMYT1_IDG_kinase_ARCHS4_coexpression, 8.882e-32, -1.54, 118.82
+        UCK2_IDG_kinase_ARCHS4_coexpression, 1.443e-24, -1.60, 95.40
+        CHRNA9_IDG_ionchannel_ARCHS4_coexpression, 9.312e-17, -1.54, 63.51
+        PKN3_IDG_kinase_ARCHS4_coexpression, 9.496e-14, -1.56, 52.99
+        CSNK2A2_IDG_kinase_ARCHS4_coexpression, 6.583e-11, -1.46, 39.83
+
+Consensus:
+    recalculate ...
+
