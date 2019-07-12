@@ -52,5 +52,15 @@ pdf("results/boxplot.pdf", height=20, width=40)
 boxplot(expressionData, names=subpopulation)
 dev.off()
 pdf("results/heatmap.pdf", height=30, width=30)
+expressionData <- data.frame(exprs(gset) %>% na.omit())
+T.expr <- expressionData %>%
+  select(expressionData[which(grepl("T",subpopulation))] %>% colnames())
+T.cats <- category[which(grepl("T",subpopulation))]
+B.expr <- expressionData %>%
+  select(expressionData[which(grepl("B",subpopulation))] %>% colnames())
+B.cats <- category[which(grepl("B",subpopulation))]
 pheatmap(cor(expressionData), labels_row=category, labels_col=category)
+pheatmap(cor(B.expr), labels_row=B.cats, labels_col=B.cats)
+pheatmap(cor(T.expr), labels_row=T.cats, labels_col=T.cats)
 dev.off()
+
