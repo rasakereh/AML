@@ -234,8 +234,108 @@
 \section{Introduction}
  This article conducts an unplanned investigation of bunch of data and research results about AML decease. As indicated by \unskip~\citet{544198:12418069}, the fifth most affected site in body by cancer is the circulatory system, with about a hundred thousands estimated cases in total of a million cancer in the US, 2002. AML is one of the most suffered and fatal one with almost 35\% of the cases resulting into death. Hence, piling up some results in this area will accelerate more experienced scientists toward a working solution. However, this field is not abandoned, and has been worked on extensively. Therefore, they are considered as rich sources of result validation. The process of the investigation begins with a beginner level differential expression analysis resulting in some gene lists with significant gene expression alterations. These lists are used as the input of the next pipeline component, gene enrichment. Extracting some pieces of information in this step will be the basis of some fact finding endeavors.
 
+\section{Data Preparation and Validation}
+The data can be accessed via GSE48558 accession number. Primarily, to verify if data is normalized and the comparisons are mathematically meaningful, a box plot was employed, resulting in Figure 1.
+\bgroup
+\fixFloatSize{img/boxplot.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/boxplot.png}{\includegraphics{img/boxplot.png}}{}
+	\makeatother 
+	\caption{{The data needs no additional normalization.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
 
+As the data needed no preprocessing, the process of validation was embarked on, which indicated a great clustering and reliability of B Cell data in comparison with other data subgroups. Figure 2 to Figure 10 would depict the claim.
+
+\bgroup
+\fixFloatSize{img/mixHeatmap.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/mixHeatmap.png}{\includegraphics{img/mixHeatmap.png}}{}
+	\makeatother 
+	\caption{{The heat map for the mixture of cells, showing poor clustering. Clustering score was not calculated due to the god damn deadline.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+\bgroup
+\fixFloatSize{img/THeatmap.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/THeatmap.png}{\includegraphics{img/THeatmap.png}}{}
+	\makeatother 
+	\caption{{The heat map for T cells, showing relatively better clustering. Clustering score was not calculated due to the god damn deadline.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+\bgroup
+\fixFloatSize{img/BHeatmap.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/BHeatmap.png}{\includegraphics{img/BHeatmap.png}}{}
+	\makeatother 
+	\caption{{The heat map for the B cells, showing almost perfect clustering. Clustering score was not calculated due to the god damn deadline.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+
+In addition to the clustering property, separability was assessed using two dimension reduction mechanisms, PCA and t-SNE.
+
+\bgroup
+\fixFloatSize{img/mixPCA.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/mixPCA.png}{\includegraphics{img/mixPCA.png}}{}
+	\makeatother 
+	\caption{{PCA indicates poor separability in cell mixture.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+\bgroup
+\fixFloatSize{img/TPCA.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/TPCA.png}{\includegraphics{img/TPCA.png}}{}
+	\makeatother 
+	\caption{{PCA indicates relatively better separability in T cells.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+\bgroup
+\fixFloatSize{img/BPCA.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/BPCA.png}{\includegraphics{img/BPCA.png}}{}
+	\makeatother 
+	\caption{{PCA indicates almost perfect separability in B cells.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+\bgroup
+\fixFloatSize{img/mixtSNE.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/mixtSNE.png}{\includegraphics{img/mixtSNE.png}}{}
+	\makeatother 
+	\caption{{T-SNE indicates poor separability in cell mixture.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+\bgroup
+\fixFloatSize{img/TtSNE.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/TtSNE.png}{\includegraphics{img/TtSNE.png}}{}
+	\makeatother 
+	\caption{{T-SNE indicates relatively better separability in T cells.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+\bgroup
+\fixFloatSize{img/BtSNE.png}
+\begin{figure*}[!htbp]
+	\centering \makeatletter\IfFileExists{img/BtSNE.png}{\includegraphics{img/BtSNE.png}}{}
+	\makeatother 
+	\caption{{T-SNE indicates almost perfect separability in B cells.}}
+	\label{f-c2b15a1baca9}
+\end{figure*}
+\egroup
+\bgroup
     
+In spite of data not being separable and cluster-able satisfyingly while looking as a whole, no portion of it was eliminated and the data analysis was done even once with the whole data, supporting the results acquired in subgroups analyses.
+
 \section{Differential Expression Analysis}
 This article has employed \unskip~\citet{544198:12421871} data set and Limma tools \unskip~\citet{544198:12421995}. The data set primarily consists of 170 samples having their expressions measured by 32321 probes and classified in two categories, having self-explanatory labels, "Normal" and "Leukemia." These samples were first examined in three prospectives, respectively independent of the cell source, cells of type T, cells of type B(Table~\ref{tw-791fc4df10f0}.)
 
@@ -294,7 +394,7 @@ Drugs &
 \tblbottomrule 
 \end{tabulary}\par 
 \end{table*}
-The comprehensive genes outputed by GSEA can be viewed in\ref{appendix-title-fe590e9f8eaf}. Amongth the extracted genes, pathways, etc, some were more attractive and listed here with some details. The headers are represented in the format of ([Source\_Change], Name, Adjusted P-value, Z-score, Combined Score, database.) %TODO database acronyms
+The comprehensive genes outputed by GSEA can be viewed in\ref{appendix-title-fe590e9f8eaf}. Amongth the extracted genes, pathways, etc, some were more attractive and listed here with some details. The headers are represented in the format of ([Source\_Change], Name, Adjusted P-value, Z-score, Combined Score, database.)
 
 
 
@@ -317,26 +417,26 @@ The comprehensive genes outputed by GSEA can be viewed in\ref{appendix-title-fe5
 \subsection{Pathways (PWs)}
 
 \subsubsection{Glycosaminoglycan degradation}
-Glycosaminoglycans are polar molecules found in extracellular matrix and interact with growth factors%(TODO https://www.ncbi.nlm.nih.gov/pubmed/8575190).
+Glycosaminoglycans are polar molecules found in extracellular matrix and interact with growth factors (\cite{doi:10.3109/10409239509083490}).
 
 \subsubsection{Glycosphingolipid biosynthesis}
-Glycosphingolipids form a major part of lipid rafts in cell membrane, in which some receptors lay %(TODO https://www.ncbi.nlm.nih.gov/books/NBK453016/).
+Glycosphingolipids form a major part of lipid rafts in cell membrane, in which some receptors lay (\cite{Glycosphingolipids}).
 
 \subsubsection{RIG-I-like receptor signaling pathway}
-RIG-I-like receptors have accepted the role of pathogen sensing of RNA viruses %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3177755/).
+RIG-I-like receptors have accepted the role of pathogen sensing of RNA viruses (\cite{Loo2011}).
 
 \subsubsection{Autoimmune thyroid disease}
-A disease in which thyroid cells are defected and secrete antigens consequently, attracting B and T cells toward themselves, therefore, driven to necrosis/apoptosis. %(TODO https://www.kegg.jp/kegg-bin/highlight_pathway?scale=1.0&map=map05320&keyword=Autoimmune%20thyroid%20disease)
+A disease in which thyroid cells are defected and secrete antigens consequently, attracting B and T cells toward themselves, therefore, driven to necrosis/apoptosis. (\cite{KEGG ATD})
 
 \subsubsection{Graft-versus-host disease}
-Allogeneic hematopoietic transplantations causes some disorders invoking donor cells against the host ones. %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2735047/, https://www.kegg.jp/kegg-bin/highlight_pathway?scale=1.0&map=map05332&keyword=Graft-versus-host%20disease)
+Allogeneic hematopoietic transplantations causes some disorders invoking donor cells against the host ones. (\cite{Ferrara2009}, \cite{GvHD})
 
 \subsubsection{Endosomal/Vacuolar pathway}
-Antigenic peptides are generated and cross presented, resulting in loaded MHC-I cells through this pathway. %(TODO: https://reactome.org/content/detail/R-HSA-1236977)
+Antigenic peptides are generated and cross presented, resulting in loaded MHC-I cells through this pathway. (\cite{Reactome E/V P})
 
 \subsubsection{Interferon alpha/beta signaling}
 The Interferon alpha/beta signaling pathway results in some IFN-stimulated and -induced gene expressions and site bindings.
-%(TODO https://reactome.org/content/detail/R-HSA-909733)
+(\cite{Reactome INFA/B sig})
 
 \subsubsection{Antigen Presentation: Folding, assembly and peptide loading of class I MHC}
 Antigen peptides are loaded to MHC I molecules and cytotoxic T cells are invoked by them. This pathway deals with MHC since Folding in Golgi up to the peptide loading of it.
@@ -345,35 +445,35 @@ Antigen peptides are loaded to MHC I molecules and cytotoxic T cells are invoked
 Self explanatory.
 
 \subsubsection{Interferon gamma signaling}
-Interferon Gamma Receptors induce phosphorylation upon binding to IFNG and consequently activate genes containing gamma-interferon activation sequence (GAS) in their promoter along this pathway. %(TODO https://reactome.org/content/detail/R-HSA-877300)
+Interferon Gamma Receptors induce phosphorylation upon binding to IFNG and consequently activate genes containing gamma-interferon activation sequence (GAS) in their promoter along this pathway. (\cite{Reactome INFG sig})
 
 \subsubsection{DNA replication}
 Self explanatory.
 
 \subsubsection{Homologous recombination}
-A pathway in which double strand breaks are fixed using the homologous DNA sequence, which is a necessary error correction mechanism for the DNA replication. %(TODO https://www.ncbi.nlm.nih.gov/books/NBK26898/)
+A pathway in which double strand breaks are fixed using the homologous DNA sequence, which is a necessary error correction mechanism for the DNA replication. (\cite{Reacombination})
 
 \subsubsection{Oocyte meiosis}
 The process of forming mature female gametocyte.
 
 \subsubsection{Fanconi anemia pathway}
-A pathway in which some replication barriers are removed. %(TODO https://www.cell.com/current-biology/comments/S0960-9822(17)30947-8#fig1)
+A pathway in which some replication barriers are removed. (\cite{Rodríguez2017})
 
 \subsubsection{E2F transcription factor network}
-E2F factors are of the most important S-phase entry in the cell cycle, although their roles are not limited to the aforementioned one. %(TODO https://www.nature.com/articles/1208612)
+E2F factors are of the most important S-phase entry in the cell cycle, although their roles are not limited to the aforementioned one. (\cite{Dimova2005})
 
 \subsubsection{PLK1 signaling events}
-Yet another pathway to ensure the mitosis is done correctly. %(TODO https://www.ncbi.nlm.nih.gov/pubmed/27043190)
+Yet another pathway to ensure the mitosis is done correctly. (\cite{Lera2016})
 
 \subsubsection{FOXM1 transcription factor network}
-FOXM1 TFs have been found to be essential for mitotic progression and some gene encodings as well. %(TODO https://www.ncbi.nlm.nih.gov/pubmed/16314512)
+FOXM1 TFs have been found to be essential for mitotic progression and some gene encodings as well. (\cite{Wang2005})
 
 \subsubsection{Aurora B signaling}
-Aurora B is assigned the duty of chromosome separation during cell divisions by the evolution. %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4607871/)
+Aurora B is assigned the duty of chromosome separation during cell divisions by the evolution. (\cite{Krenn2015})
 It is alleged that some aneuploidies are the consecuence of its malfunctioning.
 
 \subsubsection{ATR signaling pathway}
-DNA damage response is a mechanism in cell that maintains DNA integrity. This mechanism is mainly regulated by ATR signaling pathway. %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3678388/)
+DNA damage response is a mechanism in cell that maintains DNA integrity. This mechanism is mainly regulated by ATR signaling pathway. (\cite{Nam2011})
 
 \subsubsection{Cell Cycle}
 A process including but not limited to DNA replication and organelle division in order to form daughter cells.
@@ -385,73 +485,69 @@ A phase of cell cycle in which nuclear and cytoplasm are divided to form two dau
 In order to have the cell cycle under control, evolution has defined some checkpoints between each two consecutive phases of cell cycle to ensure whether it is necessary to continue the cycle.
 
 \subsubsection{G2/M Checkpoints}
-Before entering mitosis phase, this checkpoint would check the DNA replication fidelity. %(TODO https://www.ncbi.nlm.nih.gov/pubmed/15187249) 
+Before entering mitosis phase, this checkpoint would check the DNA replication fidelity. (\cite{Stark2004}) 
 
 \subsubsection{Th17 cell differentiation}
-Th17 cells are a subset of CD4+ T cells. %(TODO https://www.kegg.jp/kegg-bin/show_pathway?map=hsa04659&show_description=show)
+Th17 cells are a subset of CD4+ T cells. (\cite{KEGG ThCD})
 
 \subsubsection{Allograft rejection}
-The process of recognizing donor cells as intruders and attacking them by T cells. %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3089893/)
+The process of recognizing donor cells as intruders and attacking them by T cells. (\cite{Martinu2011})
 
 \subsubsection{TNF receptor signaling pathway}
-Regulation of cell proliferation , differentiation, and apoptosis are processes in which TNF involves in. %(TODO https://www.wikipathways.org/index.php/Pathway:WP231)
+Regulation of cell proliferation , differentiation, and apoptosis are processes in which TNF involves in. (\cite{TNFR P sig})
 
 \subsubsection{TRAIL signaling pathway}
-TRIAL is a death ligand which binds to death receptors and causes apoptosis. Metastasis suppression is of its main roles. %(TODO https://www.ncbi.nlm.nih.gov/pubmed/17545839)
+TRIAL is a death ligand which binds to death receptors and causes apoptosis. Metastasis suppression is of its main roles. (\cite{Thorburn2007})
 
 \subsubsection{IL12-mediated signaling events}
-IL12 is a protein defending cell against intracellular viral infections attracting imune system against the corrupted cell. %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2965603/)
+IL12 is a protein defending cell against intracellular viral infections attracting imune system against the corrupted cell. (\cite{Liu2005})
 
 \subsubsection{Downstream signaling in naive CD8+ T cells}
 %(TODO )
 
 \subsubsection{Cytokine Signaling in Immune system}
-"Cytokines are small proteins that regulate and mediate immunity, inflammation, and hematopoiesis. They are secreted in response to immune stimuli, and usually act briefly, locally, at very low concentrations." %(TODO: https://reactome.org/content/detail/R-HSA-1280215)
+"Cytokines are small proteins that regulate and mediate immunity, inflammation, and hematopoiesis. They are secreted in response to immune stimuli, and usually act briefly, locally, at very low concentrations." (\cite{Reactome C sig in IS})
 
 \subsubsection{p73 transcription factor network}
-p73 is a TF with low frequency of mutation in cancer despite of overlapping gene targets with p53 %(TODO https://www.ncbi.nlm.nih.gov/pubmed/16990849)
+p73 is a TF with low frequency of mutation in cancer despite of overlapping gene targets with p53 (\cite{Yu2006})
 
 \subsubsection{Mitotic Prometaphase}
 A phase of mitosis in which the nuclear membrane breaks apart.
 
 \subsubsection{Resolution of Sister Chromatid Cohesion}
-Eliminating cohesin complexes from chromosomes having them still connected at centromeres %(TODO https://reactome.org/content/detail/R-HSA-2500257)
+Eliminating cohesin complexes from chromosomes having them still connected at centromeres (\cite{Reactome RSCC})
 
 \subsubsection{Intestinal immune network for IgA production}
-A mechanism of generating and differentiating noninflammatory immunoglobulin A originated from mucosal B cells. %(TODO https://www.genome.jp/kegg-bin/show_pathway?map=hsa04672&show_description=show)
+A mechanism of generating and differentiating noninflammatory immunoglobulin A originated from mucosal B cells. (\cite{KEGG  IINIP})
 
 \subsubsection{TNF signaling pathway}
-TNFs play wide range of roles varying from apoptosis to survival reactions. %(TODO https://www.genome.jp/kegg-bin/show_pathway?hsa04668)
+TNFs play wide range of roles varying from apoptosis to survival reactions. (\cite{KEGG TNF sig})
 
 \subsubsection{Asthma}
-A pathway in which allergens invoke T cells against themselves causing inflammation. %(TODO: https://www.genome.jp/kegg-bin/show_pathway?map=hsa05310&show_description=show)
+A pathway in which allergens invoke T cells against themselves causing inflammation. (\cite{KEGG Athma})
 
 \subsubsection{Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell}
-There are some receptors and surface attaching molecules which adjust the response of lymphoid cells to the environmental condition. %(TODO https://reactome.org/content/detail/R-HSA-198933)
+There are some receptors and surface attaching molecules which adjust the response of lymphoid cells to the environmental condition. (\cite{Reactome IIbLnL})
 
 \subsubsection{Adaptive Immune System}
 A major strategy of the immune system is to produce and devote a specific kind of cells to each pathogen. This is the responsibility of Adaptive Immune System.
 
 \subsubsection{CD22 mediated BCR regulation}
-Out of control BCR expression, which causes autoimmune disease, is avoided a set of mechanisms including CD22 receptors signaling. %(TODO https://reactome.org/content/detail/R-HSA-5690714)
+Out of control BCR expression, which causes autoimmune disease, is avoided a set of mechanisms including CD22 receptors signaling. (\cite{Reactome CD22 BCR R})
 
 \subsubsection{TNF receptor superfamily (TNFSF) members mediating non-canonical NF-kB pathway}
 %(TODO )
 
 \subsubsection{Human T-cell leukemia virus 1 infection}
-A retroviral infection mostly nonlethal and even asymptomatic. %(TODO https://rarediseases.info.nih.gov/diseases/9645/human-t-cell-leukemia-virus-type-1)
+A retroviral infection mostly nonlethal and even asymptomatic. (\cite{TCLv1})
 
 \subsubsection{Regulation of retinoblastoma protein}
-Of the main G0/G1 and G1/S regulators, Rb proteins can be made. They regulates target genes of E2F TFs. %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2636798/)
+Of the main G0/G1 and G1/S regulators, Rb proteins can be made. They regulates target genes of E2F TFs. (\cite{Hume2009})
 
 \subsubsection{Mitotic G1-G1/S phases}
-Respectively growth focused and transition states in which cell's commitment to the proliferation is ensured. %(TODO: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4569015/)
+Respectively growth focused and transition states in which cell's commitment to the proliferation is ensured. (\cite{Bertoli2013})
 \newline \newline
-It can be obviously observed that the listed pathways are mainly concerning cell cycle and immune system. It can be guessed that cell cycle regulation errors are the causes of AML, while immune system deficiencies are the consequences of the cancer. The former is widely studied in %(TODO https://www.nature.com/articles/nbt.1607)
-, %(http://cancerres.aacrjournals.org/content/75/6/940)
-, %(https://www.sciencedirect.com/science/article/abs/pii/S0145212697001744)
-, %(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3433102/)
-, and a handful of other articles. This article would follow the later to compile pieces of information about immune system deficiencies and AML relation.
+It can be obviously observed that the listed pathways are mainly concerning cell cycle and immune system. It can be guessed that cell cycle regulation errors are the causes of AML, while immune system deficiencies are the consequences of the cancer. The former is widely studied in \cite{Saito2010}, \cite{Stiehl940}, \cite{BANKER1998221}, \cite{Schnerch2012}, and a handful of other articles. This article would follow the later to compile pieces of information about immune system deficiencies and AML relation.
 
 \subsection{Gene Ontology}
 Table %(TODO: )
@@ -460,15 +556,10 @@ would cover extracted Gene Ontologies which are in simple English and, therefore
 Skimming through tables entries, it was observed that highly scored ontologies are strongly linked to cell cycle regulation and fidelity mechanisms, and cellular components. While low scored ontologies, which are usually observed among genes which have been expressed less in AML affected cells, seems related to immune system regulation mechanisms and actions. Exploiting existing knowledge about AML, it could be inferred that due to failure of immune cells to differentiate and become mature, they lack the ability to accomplish their normal responsibility. Hence, the idea of immune deficiencies be side effects of AML is supported.
 
 \subsection{Consensus}
-As retroviral infections are not reported as significant causes of AML, it is not a strong suggestion to regard immune system weakness a major cause of AML. However, %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3366644/)
-has indicated that autoimmune deficiencies can surge the risk of AML and supported this idea with a number of statistical tests. These tests approve the claim in some cases while stay wordless against others. Moreover, the immune system can be considered as a major therapy fails in AML. Bone marrow stem cell transplant is among the most well known therapies for AML while as indicated by %(TODO https://www.ncbi.nlm.nih.gov/pubmed/2297567)
-it is suppressed by body immune system and donor cells are identified as intruders by the immune system. Previously reported pathways in this article has pointed this out. %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6008423/)
-suggests immunotherapy methods to bypass the aforementioned problem.
+As retroviral infections are not reported as significant causes of AML, it is not a strong suggestion to regard immune system weakness a major cause of AML. However, \cite{Ramadan2012} has indicated that autoimmune deficiencies can surge the risk of AML and supported this idea with a number of statistical tests. These tests approve the claim in some cases while stay wordless against others. Moreover, the immune system can be considered as a major therapy fails in AML. Bone marrow stem cell transplant is among the most well known therapies for AML while as indicated by \cite{Horowitz555} it is suppressed by body immune system and donor cells are identified as intruders by the immune system. Previously reported pathways in this article has pointed this out. \cite{Lamble2018} suggests immunotherapy methods to bypass the aforementioned problem.
 
 \subsection{Drugs}
-Usually cancer drugs target cell cycle phases to regulate the cell cycle, hoping to outperform mutational adaption of cancer cells %(TODO https://www.ncbi.nlm.nih.gov/pmc/articles/PMC409893/
-, %(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5785171/)
-. A list of less studied drugs can be found in %(TODO appx)
+Usually cancer drugs target cell cycle phases to regulate the cell cycle, hoping to outperform mutational adaption of cancer cells (\cite{Shapiro1999}, \cite{Bai2017}. A list of less studied drugs can be found in (TODO appx)
 , but due to the god damn deadline, any investigation about docking capability and other related drug assessments are ignored.
 
 \section*{Acknowledgments} Thank you dear everybody
@@ -1248,7 +1339,7 @@ CSNK2A2\_IDG\_kinase\_ARCHS4\_coexpression & 6.583e-11 & -1.46 & 39.83\\
 
 \bibliographystyle{apa}
 
-\bibliography{\jobname}
+\bibliography{references}
 
 \section*{Author biography}\noindent
 

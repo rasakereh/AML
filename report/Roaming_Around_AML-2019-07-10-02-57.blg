@@ -1,0 +1,222 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Roaming_Around_AML-2019-07-10-02-57.aux
+White space in argument---line 42 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{KEGG
+ :                ATD}
+I'm skipping whatever remains of this command
+White space in argument---line 45 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{Reactome
+ :                    E/V P}
+I'm skipping whatever remains of this command
+White space in argument---line 56 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{Reactome
+ :                    INFA/B sig}
+I'm skipping whatever remains of this command
+White space in argument---line 57 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{Reactome
+ :                    INFG sig}
+I'm skipping whatever remains of this command
+White space in argument---line 78 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{KEGG
+ :                ThCD}
+I'm skipping whatever remains of this command
+White space in argument---line 80 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{TNFR
+ :                P sig}
+I'm skipping whatever remains of this command
+White space in argument---line 83 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{Reactome
+ :                    C sig in IS}
+I'm skipping whatever remains of this command
+White space in argument---line 96 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{Reactome
+ :                    RSCC}
+I'm skipping whatever remains of this command
+White space in argument---line 97 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{KEGG
+ :                IINIP}
+I'm skipping whatever remains of this command
+White space in argument---line 98 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{KEGG
+ :                TNF sig}
+I'm skipping whatever remains of this command
+White space in argument---line 99 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{KEGG
+ :                Athma}
+I'm skipping whatever remains of this command
+White space in argument---line 100 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{Reactome
+ :                    IIbLnL}
+I'm skipping whatever remains of this command
+White space in argument---line 101 of file Roaming_Around_AML-2019-07-10-02-57.aux
+ : \citation{Reactome
+ :                    CD22 BCR R}
+I'm skipping whatever remains of this command
+The style file: apa.bst
+Database file #1: references.bib
+Warning--I'm ignoring Loo2011's extra "note" field
+--line 52 of file references.bib
+Warning--I'm ignoring Loo2011's extra "note" field
+--line 53 of file references.bib
+I was expecting a `,' or a `}'---line 59 of file references.bib
+ : @misc{KEGG 
+ :            ATD,
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring Ferrara2009's extra "note" field
+--line 97 of file references.bib
+Warning--I'm ignoring Ferrara2009's extra "note" field
+--line 98 of file references.bib
+I was expecting a `,' or a `}'---line 105 of file references.bib
+ : @misc{KEGG 
+ :            GvHD,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 111 of file references.bib
+ : @misc{Reactome 
+ :                E/V P,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 117 of file references.bib
+ : @misc{Reactome 
+ :                INFA/B sig,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 123 of file references.bib
+ : @misc{Reactome 
+ :                INFG sig,
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring Lera2016's extra "note" field
+--line 191 of file references.bib
+Warning--I'm ignoring Lera2016's extra "note" field
+--line 192 of file references.bib
+Warning--I'm ignoring Wang2005's extra "note" field
+--line 247 of file references.bib
+Warning--I'm ignoring Wang2005's extra "note" field
+--line 248 of file references.bib
+Warning--I'm ignoring Krenn2015's extra "note" field
+--line 275 of file references.bib
+Warning--I'm ignoring Nam2011's extra "note" field
+--line 314 of file references.bib
+Warning--I'm ignoring Nam2011's extra "note" field
+--line 315 of file references.bib
+I was expecting a `,' or a `}'---line 336 of file references.bib
+ : @misc{KEGG 
+ :            ThCD,
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring Martinu2011's extra "note" field
+--line 365 of file references.bib
+Warning--I'm ignoring Martinu2011's extra "note" field
+--line 366 of file references.bib
+I was expecting a `,' or a `}'---line 372 of file references.bib
+ : @misc{TNFR 
+ :            P sig,
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring Liu2005's extra "note" field
+--line 412 of file references.bib
+I was expecting a `,' or a `}'---line 417 of file references.bib
+ : @misc{Reactome 
+ :                C sig in IS,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 441 of file references.bib
+ : @misc{Reactome 
+ :                RSCC,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 447 of file references.bib
+ : @misc{KEGG 
+ :            IINIP,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 453 of file references.bib
+ : @misc{KEGG 
+ :            TNF sig,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 459 of file references.bib
+ : @misc{KEGG 
+ :            TNF sig,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 465 of file references.bib
+ : @misc{Reactome 
+ :                IIbLnL,
+I'm skipping whatever remains of this entry
+""" immediately follows a field part---line 473 of file references.bib
+ :  title     = TCLv1
+ :                   ",
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 477 of file references.bib
+ : @misc{Reactome 
+ :                CD22 BCR R,
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring Hume2009's extra "note" field
+--line 496 of file references.bib
+Warning--I'm ignoring Hume2009's extra "note" field
+--line 497 of file references.bib
+Warning--I'm ignoring Bertoli2013's extra "note" field
+--line 527 of file references.bib
+Warning--I'm ignoring Bertoli2013's extra "note" field
+--line 528 of file references.bib
+Warning--I'm ignoring Schnerch2012's extra "note" field
+--line 612 of file references.bib
+Warning--I'm ignoring Ramadan2012's extra "note" field
+--line 645 of file references.bib
+Warning--I'm ignoring Ramadan2012's extra "note" field
+--line 646 of file references.bib
+Warning--I'm ignoring Lamble2018's extra "note" field
+--line 685 of file references.bib
+Warning--I'm ignoring Shapiro1999's extra "note" field
+--line 716 of file references.bib
+Warning--I'm ignoring Bai2017's extra "note" field
+--line 741 of file references.bib
+Warning--I'm ignoring Bai2017's extra "note" field
+--line 742 of file references.bib
+Warning--I didn't find a database entry for "544198:12418069"
+Warning--I didn't find a database entry for "544198:12421871"
+Warning--I didn't find a database entry for "544198:12421995"
+Warning--I didn't find a database entry for "GvHD"
+Too many commas in name 1 of "Alberts B, Johnson A, Lewis J, et al" for entry Reacombination
+while executing---line 1048 of file apa.bst
+Too many commas in name 1 of "Alberts B, Johnson A, Lewis J, et al" for entry Reacombination
+while executing---line 1048 of file apa.bst
+Too many commas in name 1 of "Alberts B, Johnson A, Lewis J, et al" for entry Reacombination
+while executing---line 1123 of file apa.bst
+Warning--empty year in Reacombination
+Warning--can't use both author and editor fields in Stark2004
+Warning--empty year in TCLv1
+You've used 28 entries,
+            1940 wiz_defined-function locations,
+            732 strings with 10275 characters,
+and the built_in function-call counts, 12832 in all, are:
+= -- 1211
+> -- 651
+< -- 15
++ -- 234
+- -- 228
+* -- 1246
+:= -- 2240
+add.period$ -- 97
+call.type$ -- 28
+change.case$ -- 251
+chr.to.int$ -- 28
+cite$ -- 31
+duplicate$ -- 393
+empty$ -- 819
+format.name$ -- 276
+if$ -- 2468
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 28
+newline$ -- 156
+num.names$ -- 84
+pop$ -- 187
+preamble$ -- 1
+purify$ -- 254
+quote$ -- 0
+skip$ -- 290
+stack$ -- 0
+substring$ -- 910
+swap$ -- 63
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 164
+warning$ -- 3
+while$ -- 84
+width$ -- 0
+write$ -- 389
+(There were 31 error messages)
