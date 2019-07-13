@@ -165,9 +165,14 @@ Warning--I'm ignoring Bai2017's extra "note" field
 --line 741 of file references.bib
 Warning--I'm ignoring Bai2017's extra "note" field
 --line 742 of file references.bib
-Warning--I didn't find a database entry for "544198:12418069"
-Warning--I didn't find a database entry for "544198:12421871"
-Warning--I didn't find a database entry for "544198:12421995"
+You're missing a field name---line 787 of file references.bib
+ :  abstract = {Abstract Estimates of the worldwide incidence, mortality and prevalence of 26 cancers in the year 2002 are now available in the GLOBOCAN series of the International Agency for Research on Cancer. The results are presented here in summary form, including the geographic variation between 20 large “areas” of the world. Overall, there were 10.9 million new cases, 6.7 million deaths, and 24.6 million persons alive with cancer (within three years of diagnosis). The most commonly diagnosed cancers are lung (1.35 million), breast (1.15 million), and colorectal (1 million); the most common causes of cancer death are lung cancer (1.18 million deaths), stomach cancer (700,000 deaths), and liver cancer (598,000 deaths). The most prevalent cancer in the world is breast cancer (4.4 million survivors up to 5 years following diagnosis). There are striking variations in the risk of different cancers by geographic area. Most of the international variation is due to exposure to known or suspected risk factors related to lifestyle or environment, and provides a clear challenge to prevention.},
+ :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 793 of file references.bib
+ :  title     = Reactome 
+ :                       CD22 BCR R",
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "GvHD"
 Too many commas in name 1 of "Alberts B, Johnson A, Lewis J, et al" for entry Reacombination
 while executing---line 1048 of file apa.bst
@@ -176,47 +181,48 @@ while executing---line 1048 of file apa.bst
 Too many commas in name 1 of "Alberts B, Johnson A, Lewis J, et al" for entry Reacombination
 while executing---line 1123 of file apa.bst
 Warning--empty year in Reacombination
+Warning--empty year in doi:10.3322/canjclin.55.2.74
 Warning--can't use both author and editor fields in Stark2004
 Warning--empty year in TCLv1
-You've used 28 entries,
+You've used 31 entries,
             1940 wiz_defined-function locations,
-            732 strings with 10275 characters,
-and the built_in function-call counts, 12832 in all, are:
-= -- 1211
-> -- 651
+            748 strings with 11209 characters,
+and the built_in function-call counts, 14735 in all, are:
+= -- 1375
+> -- 805
 < -- 15
-+ -- 234
-- -- 228
-* -- 1246
-:= -- 2240
-add.period$ -- 97
-call.type$ -- 28
-change.case$ -- 251
-chr.to.int$ -- 28
-cite$ -- 31
-duplicate$ -- 393
-empty$ -- 819
-format.name$ -- 276
-if$ -- 2468
++ -- 292
+- -- 286
+* -- 1452
+:= -- 2580
+add.period$ -- 106
+call.type$ -- 31
+change.case$ -- 295
+chr.to.int$ -- 31
+cite$ -- 35
+duplicate$ -- 435
+empty$ -- 910
+format.name$ -- 337
+if$ -- 2816
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 28
-newline$ -- 156
-num.names$ -- 84
-pop$ -- 187
+missing$ -- 31
+newline$ -- 171
+num.names$ -- 93
+pop$ -- 227
 preamble$ -- 1
-purify$ -- 254
+purify$ -- 298
 quote$ -- 0
-skip$ -- 290
+skip$ -- 318
 stack$ -- 0
-substring$ -- 910
-swap$ -- 63
+substring$ -- 1016
+swap$ -- 69
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 164
-warning$ -- 3
-while$ -- 84
+type$ -- 182
+warning$ -- 4
+while$ -- 94
 width$ -- 0
-write$ -- 389
-(There were 31 error messages)
+write$ -- 427
+(There were 33 error messages)

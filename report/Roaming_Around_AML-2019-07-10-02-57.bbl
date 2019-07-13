@@ -23,6 +23,15 @@ Bertoli, C., Skotheim, J.~M., and de~Bruin, R. A.~M. (2013).
 \newblock {\em Nature reviews. Molecular cell biology}, 14(8):518--528.
 \newblock 23877564[pmid].
 
+\bibitem[\protect\astroncite{Cramer-Morales et~al.}{2013}]{Cramer-Morales1293}
+Cramer-Morales, K., Nieborowska-Skorska, M., Scheibner, K., Padget, M., Irvine,
+  D.~A., Sliwinski, T., Haas, K., Lee, J., Geng, H., Roy, D., Slupianek, A.,
+  Rassool, F.~V., Wasik, M.~A., Childers, W., Copland, M., M{\"u}schen, M.,
+  Civin, C.~I., and Skorski, T. (2013).
+\newblock Personalized synthetic lethality induced by targeting rad52 in
+  leukemias identified by gene mutation and expression profile.
+\newblock {\em Blood}, 122(7):1293--1304.
+
 \bibitem[\protect\astroncite{Dimova and Dyson}{2005}]{Dimova2005}
 Dimova, D.~K. and Dyson, N.~J. (2005).
 \newblock The e2f transcriptional network: old acquaintances with new faces.
@@ -101,12 +110,24 @@ Nam, E.~A. and Cortez, D. (2011).
 \newblock {\em The Biochemical journal}, 436(3):527--536.
 \newblock 21615334[pmid].
 
+\bibitem[\protect\astroncite{Parkin et~al.}{}]{doi:10.3322/canjclin.55.2.74}
+Parkin, D.~M., Bray, F., Ferlay, J., and Pisani, P.
+\newblock Global cancer statistics, 2002.
+\newblock {\em CA: A Cancer Journal for Clinicians}, 55(2):74--108.
+
 \bibitem[\protect\astroncite{Ramadan et~al.}{2012}]{Ramadan2012}
 Ramadan, S.~M., Fouad, T.~M., Summa, V., Hasan, S.~K., and Lo-Coco, F. (2012).
 \newblock Acute myeloid leukemia developing in patients with autoimmune
   diseases.
 \newblock {\em Haematologica}, 97(6):805--817.
 \newblock 22180424[pmid].
+
+\bibitem[\protect\astroncite{Ritchie et~al.}{2015}]{10.1093/nar/gkv007}
+Ritchie, M.~E., Phipson, B., Wu, D., Hu, Y., Law, C.~W., Shi, W., and Smyth,
+  G.~K. (2015).
+\newblock {limma powers differential expression analyses for RNA-sequencing and
+  microarray studies}.
+\newblock {\em Nucleic Acids Research}, 43(7):e47--e47.
 
 \bibitem[\protect\astroncite{RL and T.}{2017}]{Glycosphingolipids}
 RL, S. and T., K. (2017).

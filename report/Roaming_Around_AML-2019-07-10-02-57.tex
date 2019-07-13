@@ -227,12 +227,12 @@
   
 
 \begin{abstract}
- Some random words placeholding the abstract
+ Some random words placeholding the abstract%TODO
 \end{abstract}
 \end{frontmatter}
     
 \section{Introduction}
- This article conducts an unplanned investigation of bunch of data and research results about AML decease. As indicated by \unskip~\citet{544198:12418069}, the fifth most affected site in body by cancer is the circulatory system, with about a hundred thousands estimated cases in total of a million cancer in the US, 2002. AML is one of the most suffered and fatal one with almost 35\% of the cases resulting into death. Hence, piling up some results in this area will accelerate more experienced scientists toward a working solution. However, this field is not abandoned, and has been worked on extensively. Therefore, they are considered as rich sources of result validation. The process of the investigation begins with a beginner level differential expression analysis resulting in some gene lists with significant gene expression alterations. These lists are used as the input of the next pipeline component, gene enrichment. Extracting some pieces of information in this step will be the basis of some fact finding endeavors.
+ This article conducts an unplanned investigation of bunch of data and research results about AML decease. As indicated by \cite{doi:10.3322/canjclin.55.2.74}, the fifth most affected site in body by cancer is the circulatory system, with about a hundred thousands estimated cases in total of a million cancer in the US, 2002. AML is one of the most suffered and fatal one with almost 35\% of the cases resulting into death. Hence, piling up some results in this area will accelerate more experienced scientists toward a working solution. However, this field is not abandoned, and has been worked on extensively. Therefore, they are considered as rich sources of result validation. The process of the investigation begins with a beginner level differential expression analysis resulting in some gene lists with significant gene expression alterations. These lists are used as the input of the next pipeline component, gene enrichment. Extracting some pieces of information in this step will be the basis of some fact finding endeavors.
 
 \section{Data Preparation and Validation}
 The data can be accessed via GSE48558 accession number. Primarily, to verify if data is normalized and the comparisons are mathematically meaningful, a box plot was employed, resulting in Figure 1.
@@ -254,7 +254,7 @@ As the data needed no preprocessing, the process of validation was embarked on, 
 	\centering \makeatletter\IfFileExists{img/mixHeatmap.png}{\includegraphics{img/mixHeatmap.png}}{}
 	\makeatother 
 	\caption{{The heat map for the mixture of cells, showing poor clustering. Clustering score was not calculated due to the god damn deadline.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1bacb9}
 \end{figure*}
 \egroup
 \bgroup
@@ -263,7 +263,7 @@ As the data needed no preprocessing, the process of validation was embarked on, 
 	\centering \makeatletter\IfFileExists{img/THeatmap.png}{\includegraphics{img/THeatmap.png}}{}
 	\makeatother 
 	\caption{{The heat map for T cells, showing relatively better clustering. Clustering score was not calculated due to the god damn deadline.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1bacc9}
 \end{figure*}
 \egroup
 \bgroup
@@ -272,7 +272,7 @@ As the data needed no preprocessing, the process of validation was embarked on, 
 	\centering \makeatletter\IfFileExists{img/BHeatmap.png}{\includegraphics{img/BHeatmap.png}}{}
 	\makeatother 
 	\caption{{The heat map for the B cells, showing almost perfect clustering. Clustering score was not calculated due to the god damn deadline.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1bacd9}
 \end{figure*}
 \egroup
 
@@ -284,7 +284,7 @@ In addition to the clustering property, separability was assessed using two dime
 	\centering \makeatletter\IfFileExists{img/mixPCA.png}{\includegraphics{img/mixPCA.png}}{}
 	\makeatother 
 	\caption{{PCA indicates poor separability in cell mixture.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1bace9}
 \end{figure*}
 \egroup
 \bgroup
@@ -293,7 +293,7 @@ In addition to the clustering property, separability was assessed using two dime
 	\centering \makeatletter\IfFileExists{img/TPCA.png}{\includegraphics{img/TPCA.png}}{}
 	\makeatother 
 	\caption{{PCA indicates relatively better separability in T cells.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1bacf9}
 \end{figure*}
 \egroup
 \bgroup
@@ -302,7 +302,7 @@ In addition to the clustering property, separability was assessed using two dime
 	\centering \makeatletter\IfFileExists{img/BPCA.png}{\includegraphics{img/BPCA.png}}{}
 	\makeatother 
 	\caption{{PCA indicates almost perfect separability in B cells.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1bacg9}
 \end{figure*}
 \egroup
 \bgroup
@@ -311,7 +311,7 @@ In addition to the clustering property, separability was assessed using two dime
 	\centering \makeatletter\IfFileExists{img/mixtSNE.png}{\includegraphics{img/mixtSNE.png}}{}
 	\makeatother 
 	\caption{{T-SNE indicates poor separability in cell mixture.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1bach9}
 \end{figure*}
 \egroup
 \bgroup
@@ -320,7 +320,7 @@ In addition to the clustering property, separability was assessed using two dime
 	\centering \makeatletter\IfFileExists{img/TtSNE.png}{\includegraphics{img/TtSNE.png}}{}
 	\makeatother 
 	\caption{{T-SNE indicates relatively better separability in T cells.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1baci9}
 \end{figure*}
 \egroup
 \bgroup
@@ -329,7 +329,7 @@ In addition to the clustering property, separability was assessed using two dime
 	\centering \makeatletter\IfFileExists{img/BtSNE.png}{\includegraphics{img/BtSNE.png}}{}
 	\makeatother 
 	\caption{{T-SNE indicates almost perfect separability in B cells.}}
-	\label{f-c2b15a1baca9}
+	\label{f-c2b15a1bacj9}
 \end{figure*}
 \egroup
 \bgroup
@@ -337,7 +337,7 @@ In addition to the clustering property, separability was assessed using two dime
 In spite of data not being separable and cluster-able satisfyingly while looking as a whole, no portion of it was eliminated and the data analysis was done even once with the whole data, supporting the results acquired in subgroups analyses.
 
 \section{Differential Expression Analysis}
-This article has employed \unskip~\citet{544198:12421871} data set and Limma tools \unskip~\citet{544198:12421995}. The data set primarily consists of 170 samples having their expressions measured by 32321 probes and classified in two categories, having self-explanatory labels, "Normal" and "Leukemia." These samples were first examined in three prospectives, respectively independent of the cell source, cells of type T, cells of type B(Table~\ref{tw-791fc4df10f0}.)
+This article has employed \cite{Cramer-Morales1293} data set and Limma tools (\cite{10.1093/nar/gkv007}.) The data set primarily consists of 170 samples having their expressions measured by 32321 probes and classified in two categories, having self-explanatory labels, "Normal" and "Leukemia." These samples were first examined in three prospectives, respectively independent of the cell source, cells of type T, cells of type B(Table~\ref{tw-791fc4df10f0}.)
 
 After having the data in this format, a basic visualization was employed to form an intuition about the comparability of the data. The data needed no normalization (figure1.) However, the heatmap and its interensic hierarchical clustering failed to assure the validity of the data.
 
@@ -376,7 +376,7 @@ As the gene sets extracted, they were passed to EnrichR to find possible causes 
 
 \begin{table*}[!htbp]
 \caption{{Databases in Use for GSEA} }
-\label{tw-de478ae31cc6}
+\label{tw-de478ae31cd6}
 \def\arraystretch{1}
 \ignorespaces 
 \centering 
@@ -396,7 +396,7 @@ Drugs &
 \end{table*}
 The comprehensive genes outputed by GSEA can be viewed in\ref{appendix-title-fe590e9f8eaf}. Amongth the extracted genes, pathways, etc, some were more attractive and listed here with some details. The headers are represented in the format of ([Source\_Change], Name, Adjusted P-value, Z-score, Combined Score, database.)
 
-
+\cleardoublepage
 
 \subsection{Transcription Factors (TFs)}This section has been widely influenced by proteinatlas and  KEGG.
 
@@ -562,18 +562,23 @@ As retroviral infections are not reported as significant causes of AML, it is no
 Usually cancer drugs target cell cycle phases to regulate the cell cycle, hoping to outperform mutational adaption of cancer cells (\cite{Shapiro1999}, \cite{Bai2017}. A list of less studied drugs can be found in (TODO appx)
 , but due to the god damn deadline, any investigation about docking capability and other related drug assessments are ignored.
 
-\section*{Acknowledgments} Thank you dear everybody
+\subsection{Future Works}
+During the study, two main challenges were faced. The first one was the absence of a clustering and separability metric with a reasonable biological interpretation which had left the researcher unsure whether to ignore some samples for the sake of accuracy. The second challenge was the absence of an automated tool to relate the enrichment analysis results to each other. A proposed suggestion which is supported by intuition but suffering major drawbacks is to feed the enrichment process again using the extracted TFs. This idea was tested and provided weak statistical results.
+
+\section*{Acknowledgments} Special thanks to the teaching team and author's patient classmates, who were a great source of inspiration and knowledge.
+
 \appendix
 
-\section{GSEA Dataset Selection}\label{appendix-title-1f696b9ef905}
-    place holder
+\section{GSEA Database Selection}\label{appendix-title-1f696b9ef905}
+TRANSFAC and JASPAR PWMs, and miRTarBase 2017 were chosen for TF enrichment because they were curated and validated experimentally. KEGG and Reactome was selected for the same reason, however due to its vast resources and manually curated essence, NCI-Nature was used as well.
+Once again, being manually curated, was an advantage of GO against Jensen group. ARCHS4 IDG Coexp was interesting for the research because of the article's approach of digging into less studied areas has been satisfied by it. In fact, ARCHS4 IDG Coexp covers numerous under-studied drugs.
 
 
 
 \section{GSEA Full Selected Genes}\label{appendix-title-fe590e9f8eaf}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{TF Analysis of genes under-expressed in AML (cell mixture), TRANSFAC and JASPAR PWMs} }
+	\label{tw-de478ae31ce6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -585,8 +590,8 @@ ETV4 (human) & 0.043 & -1.74 & 15.24  \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{TF Analysis of genes over-expressed in AML (cell mixture), TRANSFAC and JASPAR PWMs} }
+	\label{tw-de478ae31cf6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -602,8 +607,8 @@ NFYA (human) & 0.002248 & -1.60 & 16.03 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{TF Analysis of genes over-expressed in AML (cell mixture), miRTarBase 2017} }
+	\label{tw-de478ae31cg6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -619,8 +624,8 @@ hsa-miR-92a-3p & 1.886866e-08 & -9.381637 & 223.6528 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{TF Analysis of genes over-expressed in AML (T Cells), TRANSFAC and JASPAR PWMs} }
+	\label{tw-de478ae31ch6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -633,8 +638,8 @@ E2F1 (human) & 0.002198 & -1.57 & 18.41 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{TF Analysis of genes over-expressed in AML (T Cells), miRTarBase 2017} }
+	\label{tw-de478ae31ci6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -650,8 +655,8 @@ hsa-let-7b-5p & 0.008490 & -7.90 & 85.63 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{TF Analysis of genes under-expressed in AML (B Cells), TRANSFAC and JASPAR PWMs} }
+	\label{tw-de478ae31cj6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -663,8 +668,8 @@ POU2F1 (human) & 0.03246 & -1.74 & 15.68 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{TF Analysis of genes over-expressed in AML (B Cells), TRANSFAC and JASPAR PWMs} }
+	\label{tw-de478ae31ck6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -678,8 +683,8 @@ NRF1 (human) & 0.01787 & -1.71 & 14.02 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{TF Analysis of genes over-expressed in AML (B Cells), miRTarBase 2017} }
+	\label{tw-de478ae31cl6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -695,8 +700,8 @@ hsa-let-7b-5p & 0.00006949 & -7.90 & 121.79 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes under-expressed in AML (cell mixture), KEGG2019 Human} }
+	\label{tw-de478ae31cm6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -712,8 +717,8 @@ Graft-versus-host disease & 0.001461 & -68.48 & 636.28 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes under-expressed in AML (cell mixture), Reactome 2016} }
+	\label{tw-de478ae31cn6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -729,8 +734,8 @@ Interferon gamma signaling\_Homo sapiens\_R-HSA-877300 & 0.00008257 & -1.76 & 24
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (cell mixture), KEGG2019 Human} }
+	\label{tw-de478ae31co6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -746,8 +751,8 @@ Small cell lung cancer & 0.0006399 & -63.94 & 602.21 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (cell mixture), NCI-Nature} }
+	\label{tw-de478ae31cp6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -763,8 +768,8 @@ ATR signaling pathway\_Homo sapiens\_8991cbac-618b-11e5-8ac5-06603eb7f303 & 4.75
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (cell mixture), Reactome 2016} }
+	\label{tw-de478ae31cq6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -780,8 +785,8 @@ G2/M Checkpoints\_Homo sapiens\_R-HSA-69481 & 2.432e-40 & -2.32 & 222.45 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes under-expressed in AML (T Cells), KEGG2019 Human} }
+	\label{tw-de478ae31cr6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -797,8 +802,8 @@ Allograft rejection & 0.00003361 & -54.70 & 767.09 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes under-expressed in AML (T Cells), NCI-Nature} }
+	\label{tw-de478ae31cs6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -814,8 +819,8 @@ IL2-mediated signaling events\_Homo sapiens\_a2a1883c-6193-11e5-8ac5-06603eb7f30
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes under-expressed in AML (T Cells), Reactome 2016} }
+	\label{tw-de478ae31ct6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -831,8 +836,8 @@ Interferon gamma signaling\_Homo sapiens\_R-HSA-877300 & 0.00006090 & -1.75 & 24
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (T Cells), KEGG2019 Human} }
+	\label{tw-de478ae31cu6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -848,8 +853,8 @@ DNA replication & 0.00006099 & -49.02 & 624.51 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (T Cells), NCI-Nature} }
+	\label{tw-de478ae31cv6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -865,8 +870,8 @@ ATR signaling pathway\_Homo sapiens\_8991cbac-618b-11e5-8ac5-06603eb7f303 & 1.91
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (T Cells), Reactome 2016} }
+	\label{tw-de478ae31cw6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -883,8 +888,8 @@ Intestinal immune network for IgA production & 0.000003880 & -99.15 & 1739.13 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes under-expressed in AML (B Cells), KEGG2019 Human} }
+	\label{tw-de478ae31cx6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -899,8 +904,8 @@ Asthma & 0.09760 & -81.53 & 76.60 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes under-expressed in AML (B Cells), Reactome 2016} }
+	\label{tw-de478ae31cy6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -916,8 +921,8 @@ TNF receptor superfamily (TNFSF) members mediating non-canonical NF-kB pathway\_
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (B Cells), KEGG2019 Human} }
+	\label{tw-de478ae31cz6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -933,8 +938,8 @@ Human T-cell leukemia virus 1 infection & 0.00003497 & -18.10 & 242.43 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (B Cells), NCI-Nature} }
+	\label{tw-de478ae31dc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -950,8 +955,8 @@ Regulation of retinoblastoma protein\_Homo sapiens\_407a3468-6195-11e5-8ac5-0660
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{PW Analysis of genes over-expressed in AML (B Cells), Reactome 2016} }
+	\label{tw-de478ae31ec6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -967,8 +972,8 @@ Mitotic Prometaphase\_Homo sapiens\_R-HSA-68877 & 1.569e-15 & -2.02 & 78.71 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes under-expressed in AML (cell mixture), GO Biological Process 2018} }
+	\label{tw-de478ae31fc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -984,8 +989,8 @@ regulation of necroptotic process (GO:0060544) & 0.0002905 & -1.62 & 20.96 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes under-expressed in AML (cell mixture), GO Cellular Component 2018} }
+	\label{tw-de478ae31gc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1001,8 +1006,8 @@ MHC protein complex (GO:0042611) & 0.001980 & -2.05 & 17.74 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (cell mixture), GO Biological Process 2018} }
+	\label{tw-de478ae31hc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1018,8 +1023,8 @@ chromatin remodeling at centromere (GO:0031055) & 1.246e-15 & -2.28 & 88.85 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (cell mixture), GO Molecular Function 2018} }
+	\label{tw-de478ae31ic6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1035,8 +1040,8 @@ DNA binding (GO:0003677) & 1.223e-16 & -1.20 & 50.97 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (cell mixture), GO Cellular Component 2018} }
+	\label{tw-de478ae31jc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1052,8 +1057,8 @@ chromatin (GO:0000785) & 1.158e-19 & -1.66 & 78.42 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes under-expressed in AML (T Cells), GO Biological Process 2018} }
+	\label{tw-de478ae31kc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1069,8 +1074,8 @@ antigen processing and presentation of exogenous peptide antigen via MHC class I
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes under-expressed in AML (T Cells), GO Molecular Function 2018} }
+	\label{tw-de478ae31lc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1083,8 +1088,8 @@ tumor necrosis factor-activated receptor activity (GO:0005031) & 0.04099 & -2.56
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes under-expressed in AML (T Cells), GO Cellular Component 2018} }
+	\label{tw-de478ae31mc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1100,8 +1105,8 @@ clathrin coat of trans-Golgi network vesicle (GO:0030130) & 0.05913 & -3.12 & 15
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (T Cells), GO Biological Process 2018} }
+	\label{tw-de478ae31nc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1117,8 +1122,8 @@ DNA replication (GO:0006260) & 2.687e-15 & -1.55 & 61.43 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (T Cells), GO Molecular Function 2018} }
+	\label{tw-de478ae31oc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1134,8 +1139,8 @@ DNA-dependent ATPase activity (GO:0008094) & 4.744e-7 & -1.52 & 28.12 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (T Cells), GO Cellular Component 2018} }
+	\label{tw-de478ae31pc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1151,8 +1156,8 @@ spindle (GO:0005819) & 1.758e-16 & -1.18 & 48.64 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes under-expressed in AML (B Cells), GO Biological Process 2018} }
+	\label{tw-de478ae31qc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1168,8 +1173,8 @@ positive regulation of lymphocyte activation (GO:0051251 & 0.0001266 & -2.21 & 3
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes under-expressed in AML (B Cells), GO Molecular Function 2018} }
+	\label{tw-de478ae31rc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1181,8 +1186,8 @@ immunoglobulin receptor binding (GO:0034987) & 0.00008611 & -2.41 & 36.35 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (B Cells), GO Biological Process 2018} }
+	\label{tw-de478ae31sc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1198,8 +1203,8 @@ DNA replication (GO:0006260) & 1.211e-11 & -1.55 & 47.77 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (B Cells), GO Molecular Function 2018} }
+	\label{tw-de478ae31tc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1215,8 +1220,8 @@ DNA-dependent ATPase activity (GO:0008094) & 0.00006878 & -1.53 & 22.22 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{GO Analysis of genes over-expressed in AML (B Cells), GO Cellular Component 2018} }
+	\label{tw-de478ae31uc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1232,8 +1237,8 @@ condensed chromosome kinetochore (GO:0000777) & 5.286e-7 & -2.27 & 39.74 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{Drug Enrichment of genes under-expressed in AML (cell mixture), ARCHS4 IDG Coexp} }
+	\label{tw-de478ae31vc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1249,8 +1254,8 @@ GPR174\_IDG\_GPCR\_ARCHS4\_coexpression & 8.520e-17 & -1.58 & 63.96 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{Drug Enrichment of genes over-expressed in AML (cell mixture), ARCHS4 IDG Coexp} }
+	\label{tw-de478ae31wc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1266,8 +1271,8 @@ PKN3\_IDG\_kinase\_ARCHS4\_coexpression & 7.575e-35 & -1.55 & 127.31 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{Drug Enrichment of genes under-expressed in AML (T Cells), ARCHS4 IDG Coexp} }
+	\label{tw-de478ae31xc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1283,8 +1288,8 @@ GPR171\_IDG\_GPCR\_ARCHS4\_coexpression & 3.522e-10 & -1.72 & 44.50 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{Drug Enrichment of genes over-expressed in AML (T Cells), ARCHS4 IDG Coexp} }
+	\label{tw-de478ae31yc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1300,8 +1305,8 @@ CSNK2A2\_IDG\_kinase\_ARCHS4\_coexpression & 3.962e-15 & -1.47 & 54.49 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{Drug Enrichment of genes under-expressed in AML (B Cells), ARCHS4 IDG Coexp} }
+	\label{tw-de478ae31zc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1317,8 +1322,8 @@ GPR152\_IDG\_GPCR\_ARCHS4\_coexpression & 0.003520 & -1.98 & 17.89 \\
 	\end{tabulary}\par 
 \end{table*}
 \begin{table*}[!htbp]
-	\caption{{Databases in Use for GSEA} }
-	\label{tw-de478ae31cc6}
+	\caption{{Drug Enrichment of genes over-expressed in AML (B Cells), ARCHS4 IDG Coexp} }
+	\label{tw-de478ae32cc6}
 	\def\arraystretch{1}
 	\ignorespaces 
 	\centering 
@@ -1335,7 +1340,7 @@ CSNK2A2\_IDG\_kinase\_ARCHS4\_coexpression & 6.583e-11 & -1.46 & 39.83\\
 \end{table*}
 
 
-
+\cleardoublepage
 
 \bibliographystyle{apa}
 
