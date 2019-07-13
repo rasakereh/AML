@@ -8,10 +8,12 @@ setwd("~/Desktop/sharif/9702/Bio/project")
 ACCESSION_NO <- "GSE48558"
 PLATFORM <- "GPL6244"
 
+# fetching data
 gset <- getGEO(ACCESSION_NO, GSEMatrix =TRUE, AnnotGPL=TRUE, destdir="data/")
 if (length(gset) > 1) idx <- grep(PLATFORM, attr(gset, "names")) else idx <- 1
 gset <- gset[[idx]]
 
+# preparing meta data 
 GENE.SYMBOLS <- data.frame(Gene.symbol=fData(gset)["Gene symbol"])
 GENE.SYMBOLS <- GENE.SYMBOLS %>% mutate(probe_id=rownames(GENE.SYMBOLS))
 GENE.TITLES <- data.frame(Gene.title=fData(gset)["Gene title"])
@@ -20,6 +22,7 @@ GENE.TITLES <- GENE.TITLES %>% mutate(probe_id=rownames(GENE.TITLES))
 categories <- as.factor(gset$`phenotype:ch1`)
 subpopulations <- as.factor(gset$source_name_ch1)
 
+# omiting NAs and subpopulation extraction
 expressionData <- data.frame(exprs(gset) %>% na.omit())
 T.expr <- expressionData %>%
   select(expressionData[which(grepl("T",subpopulations))] %>% colnames())
@@ -28,6 +31,7 @@ B.expr <- expressionData %>%
   select(expressionData[which(grepl("B",subpopulations))] %>% colnames())
 B.cats <- categories[which(grepl("B",subpopulations))]
 
+# function generates topTable for a set of expression data: Normal - Leukemia
 tTGenerator <- function(fl, exprData)
 {
   design <- model.matrix(~ fl + 0, exprData)
@@ -52,6 +56,8 @@ tT.total <- tTGenerator(categories, expressionData)
 tT.B <- tTGenerator(B.cats, B.expr)
 tT.T <- tTGenerator(T.cats, T.expr)
 
+# extracting significant
+#   differentially expressed genes with adj.p.val < 1e-2 and logFC > 1
 total.ups <- (tT.total %>% filter(adj.P.Val < 1e-2 & logFC > 1))[['Gene.symbol']] %>%
   strsplit("///") %>% unlist() %>% unique()
 total.downs <- (tT.total %>% filter(adj.P.Val < 1e-2 & logFC < -1))[['Gene.symbol']] %>%
@@ -65,6 +71,7 @@ T.ups <- (tT.T %>% filter(adj.P.Val < 1e-2 & logFC > 1))[['Gene.symbol']] %>%
 T.downs <- (tT.T %>% filter(adj.P.Val < 1e-2 & logFC < -1))[['Gene.symbol']] %>%
   strsplit("///") %>% unlist() %>% unique()
 
+# writing the results to disk
 write(total.ups, file="results/genes/TotalUps.txt")
 write(total.downs, file="results/genes/TotalDowns.txt")
 write(B.ups, file="results/genes/BUps.txt")

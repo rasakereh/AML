@@ -10,15 +10,21 @@ setwd("~/Desktop/sharif/9702/Bio/project")
 ACCESSION_NO <- "GSE48558"
 PLATFORM <- "GPL6244"
 
+
+# fetching data
 gset <- getGEO(ACCESSION_NO, GSEMatrix =TRUE, AnnotGPL=TRUE, destdir="data/")
 if (length(gset) > 1) idx <- grep(PLATFORM, attr(gset, "names")) else idx <- 1
 gset <- gset[[idx]]
 
+# preparing meta data 
 category <- as.factor(gset$`phenotype:ch1`)
 subpopulation <- as.factor(gset$source_name_ch1)
 
+# omiting NAs and scaling
 expressionData <- exprs(gset) %>% na.omit()
 centeredExpression <- expressionData %>% t() %>% scale(scale=F) %>% t()
+
+# Dimension reduction
 resPCA <- prcomp(centeredExpression)
 resTSNE <- Rtsne(centeredExpression %>% t(), max_iter=300)
 # (D)ata * (R)otation = (X)
@@ -26,14 +32,17 @@ resTSNE <- Rtsne(centeredExpression %>% t(), max_iter=300)
 # R: 170*170, rows: d_i, cols: pc_i
 # X: 4577*170, rows: g_i, cols: pc_i
 
+# Labeling the samples according to meta data
 groupedPCA <- data.frame(resPCA$rotation, Category=category, Subpop=subpopulation)
 groupedTSNE <- data.frame(resTSNE$Y, Category=category, Subpop=subpopulation)
 
+# Subpoplation of B and T type
 PCA.T.compare <- groupedPCA %>% filter(grepl("T",Subpop))
 PCA.B.compare <- groupedPCA %>% filter(grepl("B",Subpop))
 SNE.T.compare <- groupedTSNE %>% filter(grepl("T",Subpop))
 SNE.B.compare <- groupedTSNE %>% filter(grepl("B",Subpop))
 
+# Visualisations
 pdf("results/pdf/BasicVisualisation.pdf")
 ggplot(PCA.T.compare, aes(PC1, PC2, color=Category)) + geom_point(size=2.8) +
   labs(title="T Cells(PCA)") + theme_bw()
@@ -75,6 +84,8 @@ dev.off()
 png("results/img/boxplot.png")
 boxplot(expressionData, names=subpopulation)
 dev.off()
+
+# Subpopulation based heatmap
 expressionData <- data.frame(exprs(gset) %>% na.omit())
 T.expr <- expressionData %>%
   select(expressionData[which(grepl("T",subpopulation))] %>% colnames())
