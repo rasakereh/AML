@@ -34,7 +34,7 @@ PCA.B.compare <- groupedPCA %>% filter(grepl("B",Subpop))
 SNE.T.compare <- groupedTSNE %>% filter(grepl("T",Subpop))
 SNE.B.compare <- groupedTSNE %>% filter(grepl("B",Subpop))
 
-pdf("results/BasicVisualisation.pdf")
+pdf("results/pdf/BasicVisualisation.pdf")
 ggplot(PCA.T.compare, aes(PC1, PC2, color=Category)) + geom_point(size=2.8) +
   labs(title="T Cells(PCA)") + theme_bw()
 ggplot(PCA.B.compare, aes(PC1, PC2, color=Category)) + geom_point(size=2.8) +
@@ -48,10 +48,33 @@ ggplot(SNE.B.compare, aes(X1, X2, color=Category)) + geom_point(size=2.8) +
 ggplot(groupedTSNE, aes(X1, X2, color=Category)) + geom_point(size=2.8) +
   labs(title="Mixture of Cells(t-SNE)") + theme_bw()
 dev.off()
-pdf("results/boxplot.pdf", height=20, width=40)
+png("results/img/TPCA.png")
+ggplot(PCA.T.compare, aes(PC1, PC2, color=Category)) + geom_point(size=2.8) +
+  labs(title="T Cells(PCA)") + theme_bw()
+dev.off()
+png("results/img/BPCA.png")
+ggplot(PCA.B.compare, aes(PC1, PC2, color=Category)) + geom_point(size=2.8) +
+  labs(title="B Cells(PCA)") + theme_bw()
+dev.off()
+png("results/img/mixPCA.png")
+ggplot(groupedPCA, aes(PC1, PC2, color=Category)) + geom_point(size=2.8) +
+  labs(title="Mixture of Cells(PCA)") + theme_bw()
+dev.off()
+png("results/img/TtSNE.png")
+ggplot(SNE.T.compare, aes(X1, X2, color=Category)) + geom_point(size=2.8) +
+  labs(title="T Cells(t-SNE)") + theme_bw()
+dev.off()
+png("results/img/BtSNE.png")
+ggplot(SNE.B.compare, aes(X1, X2, color=Category)) + geom_point(size=2.8) +
+  labs(title="B Cells(t-SNE)") + theme_bw()
+dev.off()
+png("results/img/mixtSNE.png")
+ggplot(groupedTSNE, aes(X1, X2, color=Category)) + geom_point(size=2.8) +
+  labs(title="Mixture of Cells(t-SNE)") + theme_bw()
+dev.off()
+png("results/img/boxplot.png")
 boxplot(expressionData, names=subpopulation)
 dev.off()
-pdf("results/heatmap.pdf", height=30, width=30)
 expressionData <- data.frame(exprs(gset) %>% na.omit())
 T.expr <- expressionData %>%
   select(expressionData[which(grepl("T",subpopulation))] %>% colnames())
@@ -59,8 +82,18 @@ T.cats <- category[which(grepl("T",subpopulation))]
 B.expr <- expressionData %>%
   select(expressionData[which(grepl("B",subpopulation))] %>% colnames())
 B.cats <- category[which(grepl("B",subpopulation))]
+pdf("results/pdf/heatmap.pdf", height=30, width=30)
 pheatmap(cor(expressionData), labels_row=category, labels_col=category)
 pheatmap(cor(B.expr), labels_row=B.cats, labels_col=B.cats)
 pheatmap(cor(T.expr), labels_row=T.cats, labels_col=T.cats)
 dev.off()
 
+png("results/img/mixHeatmap.png")
+pheatmap(cor(expressionData), labels_row=category, labels_col=category)
+dev.off()
+png("results/img/BHeatmap.png")
+pheatmap(cor(B.expr), labels_row=B.cats, labels_col=B.cats)
+dev.off()
+png("results/img/THeatmap.png")
+pheatmap(cor(T.expr), labels_row=T.cats, labels_col=T.cats)
+dev.off()

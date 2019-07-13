@@ -65,10 +65,10 @@ T.ups <- (tT.T %>% filter(adj.P.Val < 1e-2 & logFC > 1))[['Gene.symbol']] %>%
 T.downs <- (tT.T %>% filter(adj.P.Val < 1e-2 & logFC < -1))[['Gene.symbol']] %>%
   strsplit("///") %>% unlist() %>% unique()
 
-write(total.ups, file="results/TotalUps.txt")
-write(total.downs, file="results/TotalDowns.txt")
-write(B.ups, file="results/BUps.txt")
-write(B.downs, file="results/BDowns.txt")
-write(T.ups, file="results/TUps.txt")
-write(T.downs, file="results/TDowns.txt")
+write(total.ups, file="results/genes/TotalUps.txt")
+write(total.downs, file="results/genes/TotalDowns.txt")
+write(B.ups, file="results/genes/BUps.txt")
+write(B.downs, file="results/genes/BDowns.txt")
+write(T.ups, file="results/genes/TUps.txt")
+write(T.downs, file="results/genes/TDowns.txt")
 
